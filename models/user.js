@@ -10,14 +10,14 @@ const UserSchema = new Schema({
     type: String,
     required: [true, "Username is required"],
     /*Need to match a spechific regular expression*/
-    match: [
+    /*match: [
       /^\S*(?=\S{6,})(?=\S*\d)(?=\S*[A-Z])(?=\S*[a-z])(?=\S*[!@#$%^&*? ])\S*$/,
       "Minimum 6 characters\n" +
         "At least 1 upper case English letter\n" +
         "At least 1 lower case English letter\n" +
         "At least 1 letter\n" +
         "At least 1 special character",
-    ],
+    ],*/
   },
   image: {
     type: String,

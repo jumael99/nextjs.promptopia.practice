@@ -64,6 +64,9 @@ const Nav = () => {
                   key={provider.name}
                   onClick={() => {
                     signIn(provider.id);
+                    console.log(
+                      "this route.js file has been modified, diff than tutorial",
+                    );
                   }}
                   className="black_btn"
                 >
